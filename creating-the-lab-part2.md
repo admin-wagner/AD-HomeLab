@@ -1,4 +1,5 @@
 <h2>Installing RAS / NAT</h2>
-<li>Why? Because our client machine will not be accessing the internet directly, but instead use the server's connection</li>
-<li>so in order for the client machine to get an ip address assigned to use the internet with, you need to install NAT (Network Address Translation) on the server</li>
-<li>and install RAS (Remote Access Service)</li>
+<li>Why? Because our client machine only use our internal network and wont have access to the internet</li>
+  (the server has one network setup in virtualbox that uses the hosts NAT, so it gets access to the internet through your actual PC)
+<li>so we are setting up a virtual NAT for our virtual internal network. our server will provide NAT for our clients</li>
+<li></li>
