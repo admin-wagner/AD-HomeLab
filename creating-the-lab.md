@@ -36,3 +36,5 @@ We are using the subnet 172.16.0.xxx and our server will function as the DNS ser
 <img src="https://i.imgur.com/Mi5tVXr.png">
 
 <li> The machine automatically restarts here and when it's done with everything, your Domain is almost ready</li>
+
+<h2> Continued in part 2 . . . </h2>
