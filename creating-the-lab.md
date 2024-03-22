@@ -18,3 +18,21 @@
 <img src="https://i.imgur.com/sp6LKjt.png">
 Less confusing this way...
 
+<h2>Setting up a static IP address for the server</h2>
+
+<li>In order for the internal network to function, you need to manually set the IP of the server like this:</li>
+<img src="https://i.imgur.com/k8XLhxD.png">
+We are using the subnet 172.16.0.xxx and our server will function as the DNS server as well, which is why the loopback address is used 
+
+<h2>Assigning the role of Domain Controller to the server</h2>
+<li>In the main window, select "add roles and features"</li>
+<li>choose active directory domain services and proceed with the installation</li>
+<img src="https://i.imgur.com/Nr1UmBF.png">
+
+<li>after the installation is successful, you'll need to actually promote the server to domain controller:</li>
+<img src="https://i.imgur.com/Q61PVdi.png">
+
+<li>This is the part where you name your domain. The wizard will also configure the DNS server in the installation process</li>
+<img src="https://i.imgur.com/Mi5tVXr.png">
+
+<li> The machine automatically restarts here and when it's done with everything, your Domain is almost ready</li>
