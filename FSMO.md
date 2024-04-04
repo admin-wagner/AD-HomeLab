@@ -28,3 +28,16 @@ by right clicking your domain you can view the RID, PDC and Infrastructure FSMO
   <img src="https://i.imgur.com/XH2TWL3.png">
 </p>
 
+<h2>Transfer or Seizing control of FSMO Roles</h2>
+<li>as there can only be one server for each FSMO role, you'll may want to change which server does so at times</li>
+<li>to do just that you'll have be on the server you want to assign the role onto, go through the process described above and click "change"</li>
+<img src="https://i.imgur.com/8a8oH94.png">
+<li>this is if both servers are running and working fine</li>
+<p>
+  <li>on the other hand, if a server that ran a certain FSMO is dead and will not be coming back, you have to SEIZE control of that FSMO</li>
+<li>this works by converting the read-only file of that FSMO that is on every server into a writable file</li>
+  <li>it can be done with command prompt or powershell</li>
+  <li>with command prompt, you can type in "ntdsutil" and in there go to "roles" and find the command for seizing </li>
+  <img src="https://i.imgur.com/RIIHo1Z.png">
+</p>
+
